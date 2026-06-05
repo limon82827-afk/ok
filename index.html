@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>XX网咖会员系统</title>
+
+<style>
+
+body{
+background:black;
+color:#00ff00;
+font-family:monospace;
+text-align:center;
+padding-top:100px;
+}
+
+input{
+padding:10px;
+font-size:18px;
+}
+
+button{
+padding:10px;
+font-size:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>XX网咖会员档案系统</h1>
+
+<p>请输入会员编号</p>
+
+<input id="key">
+
+<button onclick="search()">
+查询
+</button>
+
+<script>
+
+function search(){
+
+let k=document.getElementById("key").value;
+
+if(k=="170413"){
+window.location.href="17.html";
+}
+
+else if(k=="2415"){
+window.location.href="deleted.html";
+}
+
+else{
+
+alert("未找到档案");
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
